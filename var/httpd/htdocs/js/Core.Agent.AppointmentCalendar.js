@@ -1442,10 +1442,10 @@ Core.Agent.AppointmentCalendar = (function (TargetNS) {
 
             // Bind event to customer radio button.
             $('.CustomerTicketRadio').on('change', function () {
-                var CustomerKey;
+
                 if ($(this).prop('checked')){
 
-                    CustomerKey = $('#CustomerKey_' +$(this).val()).val();
+                    let CustomerKey = $('#CustomerKey_' +$(this).val()).val();
                     // get customer tickets
                     Core.Agent.CustomerSearch.ReloadCustomerInfo(CustomerKey);
                 }
@@ -1464,10 +1464,10 @@ Core.Agent.AppointmentCalendar = (function (TargetNS) {
             Core.UI.InputFields.InitSelect($('select.Modernize'));
 
             // init selected customer user
-            $('.CustomerTicketRadio').each(function(index, element) {
+            $('.CustomerTicketRadio').each(function() {
                 if ($(this).prop('checked')){
 
-                    CustomerKey = $('#CustomerKey_' +$(this).val()).val();
+                    let CustomerKey = $('#CustomerKey_' +$(this).val()).val();
                     // get customer tickets
                     Core.Agent.CustomerSearch.ReloadCustomerInfo(CustomerKey);
 
