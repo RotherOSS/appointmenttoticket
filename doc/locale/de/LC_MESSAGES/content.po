@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 11:51+0200\n"
-"PO-Revision-Date: 2024-05-17 08:13+0000\n"
+"PO-Revision-Date: 2025-01-10 11:21+0000\n"
 "Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
 "Language-Team: German <http://weblate.otobo.org/projects/"
 "manual-appointmenttoticket/master/de/>\n"
@@ -18,12 +18,12 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4.2\n"
+"X-Generator: Weblate 5.8.4\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: ../../content/index.rst:16
 msgid "Sacrifice to Sphinx"
-msgstr ""
+msgstr "Sacrifice to Sphinx"
 
 #: ../../content/index.rst:19
 msgid "Description"
@@ -35,6 +35,9 @@ msgid ""
 "with configurable parameters to a freely chooseable point in time in "
 "relation to an appointment."
 msgstr ""
+"Dieses Paket bringt die Funktionalität mit, automatisch ein Ticket mit "
+"konfigurierbaren Parametern zu einem frei wählbaren Zeitpunkt in Bezug auf "
+"einen Termin zu erstellen."
 
 #: ../../content/index.rst:22
 msgid ""
@@ -170,11 +173,11 @@ msgstr ""
 
 #: ../../content/index.rst:95
 msgid "About"
-msgstr ""
+msgstr "Über"
 
 #: ../../content/index.rst:98
 msgid "Contact"
-msgstr ""
+msgstr "Kontakt"
 
 #: ../../content/index.rst:99
 msgid "Rother OSS GmbH"
@@ -186,7 +189,7 @@ msgstr ""
 
 #: ../../content/index.rst:101
 msgid "Web: https://otobo.de"
-msgstr ""
+msgstr "Web: https://otobo.de"
 
 #: ../../content/index.rst:104
 msgid "Version"
