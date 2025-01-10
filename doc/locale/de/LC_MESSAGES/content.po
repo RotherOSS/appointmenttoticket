@@ -61,7 +61,7 @@ msgstr ""
 
 #: ../../content/index.rst:36
 msgid "Framework"
-msgstr ""
+msgstr "Framework"
 
 #: ../../content/index.rst:37
 msgid "OTOBO 11.0.x"
