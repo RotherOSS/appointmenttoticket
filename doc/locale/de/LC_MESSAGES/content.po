@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 11:51+0200\n"
-"PO-Revision-Date: 2025-01-16 11:21+0000\n"
+"PO-Revision-Date: 2025-01-16 13:21+0000\n"
 "Last-Translator: Markus Hlinka <mah@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/"
 "manual-appointmenttoticket/master/de/>\n"
@@ -118,7 +118,7 @@ msgstr ""
 
 #: ../../content/index.rst:69
 msgid "Ticket::Frontend::AgentAppointmentEdit###StateDefault"
-msgstr ""
+msgstr "Ticket::Frontend::AgentAppointmentEdit###StateDefault"
 
 #: ../../content/index.rst:70
 msgid ""
@@ -128,7 +128,7 @@ msgstr ""
 
 #: ../../content/index.rst:73
 msgid "Ticket::Frontend::AgentAppointmentEdit###SLAMandatory"
-msgstr ""
+msgstr "Ticket::Frontend::AgentAppointmentEdit###SLAMandatory"
 
 #: ../../content/index.rst:74
 msgid "Sets if SLA must be selected by the agent."
@@ -136,7 +136,7 @@ msgstr ""
 
 #: ../../content/index.rst:77
 msgid "Ticket::Frontend::AgentAppointmentEdit###Priority"
-msgstr ""
+msgstr "Ticket::Frontend::AgentAppointmentEdit###Priority"
 
 #: ../../content/index.rst:78
 msgid ""
@@ -146,11 +146,11 @@ msgstr ""
 
 #: ../../content/index.rst:81
 msgid "Frontend::Agent::View::TicketCalendar"
-msgstr ""
+msgstr "Frontend::Agent::View::TicketCalendar"
 
 #: ../../content/index.rst:84
 msgid "Ticket::Frontend::AgentAppointmentEdit###StateType"
-msgstr ""
+msgstr "Ticket::Frontend::AgentAppointmentEdit###StateType"
 
 #: ../../content/index.rst:85
 msgid ""
@@ -160,11 +160,11 @@ msgstr ""
 
 #: ../../content/index.rst:88
 msgid "Frontend::Base::DynamicFieldScreens"
-msgstr ""
+msgstr "Frontend::Base::DynamicFieldScreens"
 
 #: ../../content/index.rst:91
 msgid "DynamicFieldScreens###AppointmentTickets"
-msgstr ""
+msgstr "DynamicFieldScreens###AppointmentTickets"
 
 #: ../../content/index.rst:92
 msgid ""
