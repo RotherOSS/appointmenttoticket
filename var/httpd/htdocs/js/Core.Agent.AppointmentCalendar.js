@@ -2,9 +2,9 @@
 // OTOBO is a web-based ticketing system for service organisations.
 // --
 // Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-// Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+// Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 // --
-// $origin: otobo - c14ca55a8b1d3d686e803c1398813b83d22091e5 - var/httpd/htdocs/js/Core.Agent.AppointmentCalendar.js
+// $origin: otobo - deb99d60daf212ae73ec7feb78074f3f7ae563f8 - var/httpd/htdocs/js/Core.Agent.AppointmentCalendar.js
 // --
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software
@@ -16,7 +16,7 @@
 // along with this program. If not, see <https://www.gnu.org/licenses/>.
 // --
 
-/*global Clipboard */
+/*global Clipboard */   // eslint-disable-line no-redeclare
 
 "use strict";
 
@@ -517,10 +517,6 @@ Core.Agent.AppointmentCalendar = (function (TargetNS) {
             }
         });
 
-        var SessionIDCookie = Core.Config.Get('SessionIDCookie'),
-            SessionID = SessionIDCookie ? '' : Core.Config.Get('SessionID'),
-            SessionName = Core.Config.Get('SessionName'),
-            CustomerPanelSessionName = Core.Config.Get('CustomerPanelSessionName');
         $.each(CalendarConfig, function (Index, Calendar) {
             var CalendarData = {
                 ChallengeToken: $("#ChallengeToken").val(),
@@ -530,10 +526,6 @@ Core.Agent.AppointmentCalendar = (function (TargetNS) {
                 ResourceID: Core.Config.Get('ResourceID'),
                 TeamID: Core.Config.Get('TeamID')
             };
-            if (!SessionIDCookie) {
-                CalendarData[SessionName] = SessionID;
-                CalendarData[CustomerPanelSessionName] = SessionID;
-            }
             CalendarSources[Calendar.CalendarID] = {
                 id: Calendar.CalendarID,
                 url: Core.Config.Get('CGIHandle'),
@@ -2207,7 +2199,7 @@ Core.Agent.AppointmentCalendar = (function (TargetNS) {
             $TicketCustomDateTimeMinute: $('#TicketCustomDateTimeMinute')
         });
 // EO AppointmentToTicket
-       TargetNS.TeamInit($('#TeamID'), $('#ResourceID'), $('label[for="TeamID"] + div.Field p.ReadOnlyValue'), $('label[for="ResourceID"] + div.Field p.ReadOnlyValue'));
+        TargetNS.TeamInit($('#TeamID'), $('#ResourceID'), $('label[for="TeamID"] + div.Field p.ReadOnlyValue'), $('label[for="ResourceID"] + div.Field p.ReadOnlyValue'));
 
         if (Core.Config.Get('CalendarPermissionLevel') > 1) {
             TargetNS.PluginInit($('.PluginField'), $('#ChallengeToken').val());

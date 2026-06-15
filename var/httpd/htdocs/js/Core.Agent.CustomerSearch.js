@@ -2,9 +2,9 @@
 // OTOBO is a web-based ticketing system for service organisations.
 // --
 // Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-// Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+// Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 // --
-// $origin: otobo - e44c18aea9abc125fddf9ceeed204db4fab290e0 - var/httpd/htdocs/js/Core.Agent.CustomerSearch.js
+// $origin: otobo - deb99d60daf212ae73ec7feb78074f3f7ae563f8 - var/httpd/htdocs/js/Core.Agent.CustomerSearch.js
 // --
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software
@@ -140,9 +140,6 @@ Core.Agent.CustomerSearch = (function (TargetNS) {
                 // Update signature if needed.
                 if ($('#Dest').val() !== '') {
                     SignatureURL = Core.Config.Get('Baselink') + 'Action=' + Core.Config.Get('Action') + ';Subaction=Signature;Dest=' + $('#Dest').val() + ';SelectedCustomerUser=' + $('#SelectedCustomerUser').val();
-                    if (!Core.Config.Get('SessionIDCookie')) {
-                        SignatureURL += ';' + Core.Config.Get('SessionName') + '=' + Core.Config.Get('SessionID');
-                    }
                     $('#Signature').attr('src', SignatureURL);
                 }
             }
@@ -897,7 +894,7 @@ Core.Agent.CustomerSearch = (function (TargetNS) {
      *      This function removes a customer ticket entry.
      */
     TargetNS.RemoveCustomerTicket = function (Object) {
-        var TicketCustomerIDs = 0,
+        var TicketCustomerIDs,
         $Field = Object.closest('.Field'),
         $Form;
 

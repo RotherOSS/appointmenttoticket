@@ -2,9 +2,9 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.io/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - e44c18aea9abc125fddf9ceeed204db4fab290e0 - Kernel/System/Calendar/Appointment.pm
+# $origin: otobo - b786ccf7a8baa601886fae729fc372ca8a240087 - Kernel/System/Calendar/Appointment.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -358,8 +358,8 @@ sub AppointmentCreate {
     my $DBObject = $Kernel::OM->Get('Kernel::System::DB');
     my @Bind;
 
-    # parent ID supplied
-    my $ParentIDCol = my $ParentIDVal = '';
+    # the parent_id is only supplied for recurring events
+    my ( $ParentIDCol, $ParentIDVal ) = ( '', '' );
     if ( $Param{ParentID} ) {
         $ParentIDCol = 'parent_id,';
         $ParentIDVal = '?,';
@@ -409,20 +409,24 @@ sub AppointmentCreate {
         $AppointmentID = $Param{ParentID};
     }
 
-    # get appointment id for parent appointment
+    # get appointment id for the appointment that was just added
     else {
-        return if !$DBObject->Prepare(
-            SQL => '
-                SELECT id FROM calendar_appointment
-                WHERE unique_id = ? AND parent_id IS NULL
-            ',
-            Bind  => [ \$Param{UniqueID} ],
-            Limit => 1,
+        ($AppointmentID) = $DBObject->SelectRowArray(
+            SQL => <<'END_SQL',
+SELECT id
+  FROM calendar_appointment
+  WHERE calendar_id = ?
+    AND unique_id   = ?
+    AND title       = ?
+    AND parent_id   IS NULL
+  ORDER BY id DESC
+END_SQL
+            Bind => [
+                \$Param{CalendarID},
+                \$Param{UniqueID},
+                \$Param{Title},
+            ],
         );
-
-        while ( my @Row = $DBObject->FetchrowArray() ) {
-            $AppointmentID = $Row[0] || '';
-        }
 
         # return if there is not appointment created
         if ( !$AppointmentID ) {
@@ -434,7 +438,8 @@ sub AppointmentCreate {
         }
     }
 
-    # add recurring appointments
+    # Add recurring appointments. The AppointmentCreate event
+    # will be triggered for each added appointment.
     if ( $Param{Recurring} && !$Param{RecurringRaw} ) {
         return if !$Self->_AppointmentRecurringCreate(
             ParentID    => $AppointmentID,
@@ -2905,6 +2910,7 @@ sub _AppointmentRecurringCreate {
             # skip excluded appointments
             next UNTIL_TIME if grep { $StartTime eq $_ } @RecurrenceExclude;
 
+            # the AppointmentCreate event will be triggered
             $Self->AppointmentCreate(
                 %{ $Param{Appointment} },
                 ParentID     => $Param{ParentID},
