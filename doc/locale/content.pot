@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
-# This file is distributed under the same license as the OTOBO Installation Guide package.
+# Copyright (C) 2019–2026 Rother OSS GmbH, https://otobo.io
+# This file is distributed under the same license as the OTOBO Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
+"Project-Id-Version: OTOBO Documentation dev\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-14 13:50+0100\n"
+"POT-Creation-Date: 2026-06-15 14:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,164 +16,167 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../content/index.rst:20
-msgid "Sacrifice to Sphinx"
+#: ../content/index.rst:5
+msgid "Contents"
 msgstr ""
 
-#: ../../content/index.rst:23
+#: ../content/index.rst:10
 msgid "Description"
 msgstr ""
 
-#: ../../content/index.rst:24
+#: ../content/index.rst:11
 msgid "This package brings the functionality to automatically create a ticket with configurable parameters to a freely chooseable point in time in relation to an appointment."
 msgstr ""
 
-#: ../../content/index.rst:26
+#: ../content/index.rst:13
 msgid "Ticket Creation is initiated in the AppointmentEdit mask under the section 'Ticket Creation'. A point in time relative to the appointment, as well as ticket data can be configured. Recurring appointments are supported."
 msgstr ""
 
-#: ../../content/index.rst:28
+#: ../content/index.rst:15
 msgid "The feature as of now does not support dynamic fields of type database."
 msgstr ""
 
-#: ../../content/index.rst:34
+#: ../content/index.rst:17
+msgid "The sreenshot shows the newly available fields."
+msgstr ""
+
+#: ../content/index.rst:21
 msgid "The screenshot shows the newly available fields for ticket creation."
 msgstr ""
 
-#: ../../content/index.rst:37
+#: ../content/index.rst:24
 msgid "System requirements"
 msgstr ""
 
-#: ../../content/index.rst:40
+#: ../content/index.rst:27
 msgid "Framework"
 msgstr ""
 
-#: ../../content/index.rst:41
+#: ../content/index.rst:28
 msgid "OTOBO 11.0.x"
 msgstr ""
 
-#: ../../content/index.rst:44
+#: ../content/index.rst:31
 msgid "Packages"
 msgstr ""
 
-#: ../../content/index.rst:45
-#: ../../content/index.rst:49
+#: ../content/index.rst:32
+#: ../content/index.rst:36
 msgid "\\-"
 msgstr ""
 
-#: ../../content/index.rst:48
+#: ../content/index.rst:35
 msgid "Third-party software"
 msgstr ""
 
-#: ../../content/index.rst:52
+#: ../content/index.rst:39
 msgid "Configuration Reference"
 msgstr ""
 
-#: ../../content/index.rst:55
+#: ../content/index.rst:42
 msgid "Frontend::Agent::ModuleRegistration::Loader"
 msgstr ""
 
-#: ../../content/index.rst:58
+#: ../content/index.rst:45
 msgid "Loader::Module::AgentAppointmentCalendarOverview###009-AppointmentTicket"
 msgstr ""
 
-#: ../../content/index.rst:59
+#: ../content/index.rst:46
 msgid "Loadermodule registration for the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:62
+#: ../content/index.rst:49
 msgid "Frontend::Agent::View::AgentAppointmentEdit"
 msgstr ""
 
-#: ../../content/index.rst:65
+#: ../content/index.rst:52
 msgid "Ticket::Frontend::AgentAppointmentEdit###ServiceMandatory"
 msgstr ""
 
-#: ../../content/index.rst:66
+#: ../content/index.rst:53
 msgid "Sets if service must be selected by the agent."
 msgstr ""
 
-#: ../../content/index.rst:69
+#: ../content/index.rst:56
 msgid "Ticket::Frontend::AgentAppointmentEdit###DynamicField"
 msgstr ""
 
-#: ../../content/index.rst:70
+#: ../content/index.rst:57
 msgid "Dynamic fields shown in the appointment edit screen of the agent interface"
 msgstr ""
 
-#: ../../content/index.rst:73
+#: ../content/index.rst:60
 msgid "Ticket::Frontend::AgentAppointmentEdit###StateDefault"
 msgstr ""
 
-#: ../../content/index.rst:74
+#: ../content/index.rst:61
 msgid "Sets the default next state for new tickets in the AgentAppointmentEdit interface."
 msgstr ""
 
-#: ../../content/index.rst:77
+#: ../content/index.rst:64
 msgid "Ticket::Frontend::AgentAppointmentEdit###SLAMandatory"
 msgstr ""
 
-#: ../../content/index.rst:78
+#: ../content/index.rst:65
 msgid "Sets if SLA must be selected by the agent."
 msgstr ""
 
-#: ../../content/index.rst:81
+#: ../content/index.rst:68
 msgid "Ticket::Frontend::AgentAppointmentEdit###Priority"
 msgstr ""
 
-#: ../../content/index.rst:82
+#: ../content/index.rst:69
 msgid "Sets the default priority for new tickets in the AgentAppointmentEdit interface."
 msgstr ""
 
-#: ../../content/index.rst:85
+#: ../content/index.rst:72
 msgid "Frontend::Agent::View::TicketCalendar"
 msgstr ""
 
-#: ../../content/index.rst:88
+#: ../content/index.rst:75
 msgid "Ticket::Frontend::AgentAppointmentEdit###StateType"
 msgstr ""
 
-#: ../../content/index.rst:89
+#: ../content/index.rst:76
 msgid "Determines the next possible ticket states, after the creation of a new ticket from a calendar appointment in the agent interface."
 msgstr ""
 
-#: ../../content/index.rst:92
+#: ../content/index.rst:79
 msgid "Frontend::Base::DynamicFieldScreens"
 msgstr ""
 
-#: ../../content/index.rst:95
+#: ../content/index.rst:82
 msgid "DynamicFieldScreens###AppointmentTickets"
 msgstr ""
 
-#: ../../content/index.rst:96
+#: ../content/index.rst:83
 msgid "This configuration defines all possible screens to enable or disable dynamic fields."
 msgstr ""
 
-#: ../../content/index.rst:99
+#: ../content/index.rst:86
 msgid "About"
 msgstr ""
 
-#: ../../content/index.rst:102
+#: ../content/index.rst:89
 msgid "Contact"
 msgstr ""
 
-#: ../../content/index.rst:103
+#: ../content/index.rst:90
 msgid "Rother OSS GmbH"
 msgstr ""
 
-#: ../../content/index.rst:104
+#: ../content/index.rst:91
 msgid "Email: hello@otobo.de"
 msgstr ""
 
-#: ../../content/index.rst:105
+#: ../content/index.rst:92
 msgid "Web: https://otobo.de"
 msgstr ""
 
-#: ../../content/index.rst:108
+#: ../content/index.rst:95
 msgid "Version"
 msgstr ""
 
-#: ../../content/index.rst:109
+#: ../content/index.rst:96
 msgid "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-datestamp|"
 msgstr ""
-
