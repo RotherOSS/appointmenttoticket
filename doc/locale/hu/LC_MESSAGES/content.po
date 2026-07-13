@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-13 11:51+0200\n"
-"PO-Revision-Date: 2026-07-13 12:00+0000\n"
+"PO-Revision-Date: 2026-07-13 14:46+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-0/"
 "addons/manuals/appointmenttoticket-documentation/hu/>\n"
@@ -82,7 +82,7 @@ msgstr "Beállítások hivatkozása"
 
 #: ../../content/index.rst:51
 msgid "Frontend::Agent::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
 #: ../../content/index.rst:54
 msgid "Loader::Module::AgentAppointmentCalendarOverview###009-AppointmentTicket"
