@@ -4,28 +4,30 @@
 # Guide package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-15 14:24+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-07-13 12:00+0000\n"
+"Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
+"Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
+"addons/manuals/appointmenttoticket-documentation/hu/>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: ../content/index.rst:5
 msgid "Contents"
-msgstr ""
+msgstr "Tartalom"
 
 #: ../content/index.rst:10
 msgid "Description"
-msgstr ""
+msgstr "Leírás"
 
 #: ../content/index.rst:11
 msgid ""
@@ -55,31 +57,31 @@ msgstr ""
 
 #: ../content/index.rst:24
 msgid "System requirements"
-msgstr ""
+msgstr "Rendszerkövetelmények"
 
 #: ../content/index.rst:27
 msgid "Framework"
-msgstr ""
+msgstr "Keretrendszer"
 
 #: ../content/index.rst:28
 msgid "OTOBO 11.0.x"
-msgstr ""
+msgstr "OTOBO 11.0.x"
 
 #: ../content/index.rst:31
 msgid "Packages"
-msgstr ""
+msgstr "Csomagok"
 
 #: ../content/index.rst:32 ../content/index.rst:36
 msgid "\\-"
-msgstr ""
+msgstr "\\-"
 
 #: ../content/index.rst:35
 msgid "Third-party software"
-msgstr ""
+msgstr "Harmadik féltől származó szoftverek"
 
 #: ../content/index.rst:39
 msgid "Configuration Reference"
-msgstr ""
+msgstr "Beállítások hivatkozása"
 
 #: ../content/index.rst:42
 msgid "Frontend::Agent::ModuleRegistration::Loader"
@@ -173,15 +175,15 @@ msgstr ""
 
 #: ../content/index.rst:86
 msgid "About"
-msgstr ""
+msgstr "Névjegy"
 
 #: ../content/index.rst:89
 msgid "Contact"
-msgstr ""
+msgstr "Kapcsolat"
 
 #: ../content/index.rst:90
 msgid "Rother OSS GmbH"
-msgstr ""
+msgstr "Rother OSS GmbH"
 
 #: ../content/index.rst:91
 msgid "Email: hello@otobo.de"
@@ -193,10 +195,11 @@ msgstr ""
 
 #: ../content/index.rst:95
 msgid "Version"
-msgstr ""
+msgstr "Verzió"
 
 #: ../content/index.rst:96
 msgid ""
 "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
 "datestamp|"
 msgstr ""
+"Szerző: |doc-vendor| / Verzió: |doc-version| / Kiadás dátuma: |doc-datestamp|"
