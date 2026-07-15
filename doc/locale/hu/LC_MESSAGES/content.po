@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-13 12:00+0000\n"
-"PO-Revision-Date: 2026-07-14 12:21+0000\n"
+"PO-Revision-Date: 2026-07-15 17:00+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/manuals/appointmenttoticket-documentation/hu/>\n"
@@ -106,7 +106,7 @@ msgstr ""
 
 #: ../content/index.rst:53
 msgid "Sets if service must be selected by the agent."
-msgstr ""
+msgstr "Beállítja, hogy az ügyintézőnek ki kell választania a szolgáltatást."
 
 #: ../content/index.rst:56
 msgid "Ticket::Frontend::AgentAppointmentEdit###DynamicField"
@@ -133,7 +133,7 @@ msgstr ""
 
 #: ../content/index.rst:65
 msgid "Sets if SLA must be selected by the agent."
-msgstr ""
+msgstr "Beállítja, hogy az ügyintézőnek ki kell választania az SLA-t."
 
 #: ../content/index.rst:68
 msgid "Ticket::Frontend::AgentAppointmentEdit###Priority"
