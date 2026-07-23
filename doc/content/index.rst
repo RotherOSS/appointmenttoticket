@@ -38,52 +38,62 @@ Third-party software
 --------------------
 \-
 
+Usage
+=====
+
+Setup
+-----
+
 Configuration Reference
-=======================
+-----------------------
 
 Frontend::Agent::ModuleRegistration::Loader
-------------------------------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Loader::Module::AgentAppointmentCalendarOverview###009-AppointmentTicket
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Loadermodule registration for the agent interface.
 
 Frontend::Agent::View::AgentAppointmentEdit
-------------------------------------------------------------------------------------------------------------------------------
-
-Ticket::Frontend::AgentAppointmentEdit###ServiceMandatory
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Sets if service must be selected by the agent.
 
 Ticket::Frontend::AgentAppointmentEdit###DynamicField
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Dynamic fields shown in the appointment edit screen of the agent interface
-
-Ticket::Frontend::AgentAppointmentEdit###StateDefault
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Sets the default next state for new tickets in the AgentAppointmentEdit interface.
-
-Ticket::Frontend::AgentAppointmentEdit###SLAMandatory
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Sets if SLA must be selected by the agent.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Dynamic fields shown in the appointment edit screen of the agent interface.
 
 Ticket::Frontend::AgentAppointmentEdit###Priority
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Sets the default priority for new tickets in the AgentAppointmentEdit interface.
 
+Ticket::Frontend::AgentAppointmentEdit###SLAMandatory
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Sets if SLA must be selected by the agent.
+
+Ticket::Frontend::AgentAppointmentEdit###ServiceMandatory
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Sets if service must be selected by the agent.
+
+Ticket::Frontend::AgentAppointmentEdit###StateDefault
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Sets the default next state for new tickets in the AgentAppointmentEdit interface.
+
 Frontend::Agent::View::TicketCalendar
-------------------------------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Ticket::Frontend::AgentAppointmentEdit###StateType
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Determines the next possible ticket states, after the creation of a new ticket from a calendar appointment in the agent interface.
 
 Frontend::Base::DynamicFieldScreens
-------------------------------------------------------------------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 DynamicFieldScreens###AppointmentTickets
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 This configuration defines all possible screens to enable or disable dynamic fields.
+
+DynamicFieldScreens::ObjectTypes###AppointmentTickets
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.
 
 About
 =======
@@ -91,8 +101,8 @@ About
 Contact
 -------
 | Rother OSS GmbH
-| Email: hello@otobo.de
-| Web: https://otobo.de
+| Email: hello@otobo.io
+| Web: https://otobo.io
 
 Version
 -------
