@@ -37,6 +37,8 @@ sub Data {
     $Self->{Translation}->{'Could not perform validation on field priority!'} = 'Die Überprüfung des Feldes Priorität konnte nicht durchgeführt werden!';
 
     # SysConfig
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        '';
     $Self->{Translation}->{'Determines the next possible ticket states, after the creation of a new ticket from a calendar appointment in the agent interface.'} =
         'Ermittelt die nächstmöglichen Ticketstatus, nachdem ein neues Ticket aus einem Kalendertermin in der Agentenoberfläche erstellt wurde.';
     $Self->{Translation}->{'Dynamic fields shown in the appointment edit screen of the agent interface.'} =

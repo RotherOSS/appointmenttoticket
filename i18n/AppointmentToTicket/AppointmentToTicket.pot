@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AppointmentToTicket\n"
-"POT-Creation-Date: 2024-11-13 16:03+0000\n"
+"POT-Creation-Date: 2026-07-27 06:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,6 +44,10 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
 msgid "Could not perform validation on field priority!"
+msgstr ""
+
+#. SysConfig
+msgid "Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface."
 msgstr ""
 
 #. SysConfig
