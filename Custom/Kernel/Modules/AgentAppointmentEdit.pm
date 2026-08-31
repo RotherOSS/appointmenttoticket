@@ -3008,7 +3008,7 @@ sub Run {
         # cycle through the activated Dynamic Fields for this screen
         DYNAMICFIELD:
         for my $Index ( sort keys %{ $DynFieldStates{Fields} } ) {
-            my $DynamicFieldConfig = $Self->{DynamicField}->[$Index];
+            my $DynamicFieldConfig = $Self->{DynamicField}->{$Index};
 
             my $DataValues = $DynFieldStates{Fields}{$Index}{NotACLReducible}
                 ? $GetParam{DynamicField}{"DynamicField_$DynamicFieldConfig->{Name}"}
