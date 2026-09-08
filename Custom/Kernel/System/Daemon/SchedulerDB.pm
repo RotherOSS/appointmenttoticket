@@ -4,7 +4,7 @@
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
 # Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
-# $origin: otobo - 6efdc7bf2a3325277cd79a60f0f2407f8ad59e87 - Kernel/System/Daemon/SchedulerDB.pm
+# $origin: otobo - 0330b470a10ef7adcb8e7f894f0d3f67599fb823 - Kernel/System/Daemon/SchedulerDB.pm
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -191,12 +191,6 @@ sub TaskAdd {
         ],
     );
 
-    # delete task list cache
-    $Kernel::OM->Get('Kernel::System::Cache')->Delete(
-        Type => 'SchedulerDB',
-        Key  => 'TaskListUnlocked',
-    );
-
     return $TaskID;
 }
 
@@ -321,12 +315,6 @@ sub TaskDelete {
         Bind => [ \$Param{TaskID} ],
     );
 
-    # delete task list cache
-    $Kernel::OM->Get('Kernel::System::Cache')->Delete(
-        Type => 'SchedulerDB',
-        Key  => 'TaskListUnlocked',
-    );
-
     return 1;
 }
 
@@ -395,7 +383,7 @@ sub TaskList {
 
 =head2 TaskListUnlocked()
 
-get a list of unlocked tasks
+get a list of unlocked tasks, that is tasks that are queued for work
 
     my @TaskList = $SchedulerDBObject->TaskListUnlocked();
 
@@ -406,45 +394,17 @@ Returns:
 =cut
 
 sub TaskListUnlocked {
-    my ( $Self, %Param ) = @_;
-
-    # get cache object
-    my $CacheObject = $Kernel::OM->Get('Kernel::System::Cache');
-
-    # read cache
-    my $Cache = $CacheObject->Get(
-        Type           => 'SchedulerDB',
-        Key            => 'TaskListUnlocked',
-        CacheInMemory  => 0,
-        CacheInBackend => 1,
-    );
-    return @{$Cache} if $Cache;
+    my ($Self) = @_;
 
     # get database object
     my $DBObject = $Kernel::OM->Get('Kernel::System::DB');
 
     # ask the database
-    return if !$DBObject->Prepare(
+    my @TaskIDs = $DBObject->SelectColArray(
         SQL => 'SELECT id FROM scheduler_task WHERE lock_key = 0 ORDER BY id ASC',
     );
 
-    # fetch the result
-    my @List;
-    while ( my @Row = $DBObject->FetchrowArray() ) {
-        push @List, $Row[0];
-    }
-
-    # set cache
-    $CacheObject->Set(
-        Type           => 'SchedulerDB',
-        Key            => 'TaskListUnlocked',
-        TTL            => 10,
-        Value          => \@List,
-        CacheInMemory  => 0,
-        CacheInBackend => 1,
-    );
-
-    return @List;
+    return @TaskIDs;
 }
 
 =head2 TaskLock()
@@ -550,12 +510,6 @@ sub TaskLock {
         );
     }
 
-    # delete list cache
-    $Kernel::OM->Get('Kernel::System::Cache')->Delete(
-        Type => 'SchedulerDB',
-        Key  => 'TaskListUnlocked',
-    );
-
     return 1;
 }
 
@@ -580,7 +534,7 @@ sub TaskCleanup {
         );
 
         # skip if task does not have a lock key
-        next TASKITEM if !$Task{LockKey};
+        next TASKITEM unless $Task{LockKey};
 
         # skip if the lock key is invalid
         next TASKITEM if $Task{LockKey} < 1;
@@ -1017,12 +971,6 @@ sub FutureTaskAdd {
         ],
     );
 
-    # delete future task list cache
-    $Kernel::OM->Get('Kernel::System::Cache')->Delete(
-        Type => 'SchedulerDB',
-        Key  => 'FutureTaskListUnlocked',    # TODO FIXME
-    );
-
     return $TaskID;
 }
 
@@ -1256,12 +1204,6 @@ sub FutureTaskDelete {
     $Kernel::OM->Get('Kernel::System::DB')->Do(
         SQL  => 'DELETE FROM scheduler_future_task WHERE id = ?',
         Bind => [ \$Param{TaskID} ],
-    );
-
-    # delete future task list cache
-    $Kernel::OM->Get('Kernel::System::Cache')->Delete(
-        Type => 'SchedulerDB',
-        Key  => 'FutureTaskListUnlocked',    # TODO FIXME
     );
 
     return 1;
@@ -2086,27 +2028,15 @@ sub RecurrentTaskDelete {
         return;
     }
 
-    # get task to delete cache
-    my %Task = $Self->RecurrentTaskGet(
-        TaskID => $Param{TaskID},
-    );
-
     # delete task from the recurrent task list
     $Kernel::OM->Get('Kernel::System::DB')->Do(
         SQL  => 'DELETE FROM scheduler_recurrent_task WHERE id = ?',
         Bind => [ \$Param{TaskID} ],
     );
 
-    # delete cache if task exits before the delete
-    if (%Task) {
-
-        my $CacheKey = "$Task{Name}::$Task{Type}";
-
-        $Kernel::OM->Get('Kernel::System::Cache')->Delete(
-            Type => 'SchedulerDBRecurrentTaskExecute',
-            Key  => '$CacheKey',
-        );
-    }
+    # There is no need to invalidate the cache for 'SchedulerDBRecurrentTaskExecute'.
+    # This cache item prevents double execution of tasks which is wanted in any case.
+    # There is no pile up of cache items because the the value is only cached for five minutes.
 
     return 1;
 }
@@ -2116,17 +2046,16 @@ sub RecurrentTaskDelete {
 executes recurrent tasks like cron or generic agent tasks
 
     my $Success = $SchedulerDBObject->RecurrentTaskExecute(
-        NodeID                   => 1,                 # the ID of the node in a cluster environment
-        PID                      => 456,               # the process ID of the daemon that is creating
-                                                       #    the tasks to execution
+        NodeID                   => 1,                     # the ID of the node in a cluster environment
+        PID                      => 456,                   # the process ID of the daemon that is creating
+                                                           #    the tasks to execution
         TaskName                 => 'UniqueTaskName',
         TaskType                 => 'Cron',
-        PreviousEventTimestamp   => 1433212343,
-        MaximumParallelInstances => 1,                 # optional (default 0) number of tasks with the
-                                                       #    same name and type that can be in execution
-                                                       #    table at the same time, value of 0 means
-                                                       #    unlimited
-        Data                   => {                    # data payload
+        PreviousEventTimestamp   => '2026-08-14 10:18:32', # time that triggered the execution
+        MaximumParallelInstances => 1,                     # optional (default 0) number of tasks with the
+                                                           #   same name and type that can be in execution
+                                                           #   table at the same time, value of 0 means unlimited
+        Data                     => {                      # data payload
             ...
         },
     );
@@ -2152,7 +2081,7 @@ sub RecurrentTaskExecute {
 
     my $CacheKey = "$Param{TaskName}::$Param{TaskType}";
 
-    # read cache
+    # Get the time that triggered the last execution of this task.
     my $Cache = $CacheObject->Get(
         Type           => 'SchedulerDBRecurrentTaskExecute',
         Key            => $CacheKey,
@@ -2160,6 +2089,7 @@ sub RecurrentTaskExecute {
         CacheInBackend => 1,
     );
 
+    # Nothing to do. The time that triggered this call already has already triggered an execution of the task.
     return 1 if $Cache && $Cache eq $Param{PreviousEventTimestamp};
 
     # get needed objects
@@ -2214,7 +2144,8 @@ sub RecurrentTaskExecute {
 
     if ( $LastExecutionTimeStamp eq $Param{PreviousEventTimestamp} ) {
 
-        # set cache
+        # Communicate the time that triggered the current execution
+        # to the next invocation of this subroutine RecurrentTaskExecute().
         $CacheObject->Set(
             Type           => 'SchedulerDBRecurrentTaskExecute',
             Key            => $CacheKey,
