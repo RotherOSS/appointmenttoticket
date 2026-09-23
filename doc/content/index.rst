@@ -19,7 +19,7 @@ The feature as of now does not support dynamic fields of type database.
 
 .. figure:: screenshot_en.png
    :scale: 50%
-   :alt: The sreenshot shows the newly available fields. 
+   :alt: The screenshot shows the newly available fields.
 
    The screenshot shows the newly available fields for ticket creation.
 
