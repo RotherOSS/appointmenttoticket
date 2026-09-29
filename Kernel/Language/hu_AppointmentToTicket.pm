@@ -14,7 +14,7 @@
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 # --
 
-package Kernel::Language::de_AppointmentToTicket;
+package Kernel::Language::hu_AppointmentToTicket;
 
 use strict;
 use warnings;
@@ -24,27 +24,27 @@ sub Data {
     my $Self = shift;
 
     # Template: AgentAppointmentEdit
-    $Self->{Translation}->{'Ticket Creation'} = '';
-    $Self->{Translation}->{'Article is visible for customer'} = '';
+    $Self->{Translation}->{'Ticket Creation'} = 'Jegylétrehozás';
+    $Self->{Translation}->{'Article is visible for customer'} = 'A bejegyzés látható az ügyfélnek';
 
     # Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
-    $Self->{Translation}->{'No ticket creation'} = '';
-    $Self->{Translation}->{'Could not perform validation on field dest!'} = '';
-    $Self->{Translation}->{'Could not perform validation on field next state!'} = '';
-    $Self->{Translation}->{'Could not perform validation on field service!'} = '';
-    $Self->{Translation}->{'Could not perform validation on field SLA!'} = '';
-    $Self->{Translation}->{'Could not perform validation on field type!'} = '';
-    $Self->{Translation}->{'Could not perform validation on field priority!'} = '';
+    $Self->{Translation}->{'No ticket creation'} = 'Nincs jegylétrehozás';
+    $Self->{Translation}->{'Could not perform validation on field dest!'} = 'Nem sikerült végrehajtani az ellenőrzést a cél mezőn!';
+    $Self->{Translation}->{'Could not perform validation on field next state!'} = 'Nem sikerült végrehajtani az ellenőrzést a következő állapot mezőn!';
+    $Self->{Translation}->{'Could not perform validation on field service!'} = 'Nem sikerült végrehajtani az ellenőrzést a szolgáltatás mezőn!';
+    $Self->{Translation}->{'Could not perform validation on field SLA!'} = 'Nem sikerült végrehajtani az ellenőrzést az SLA mezőn!';
+    $Self->{Translation}->{'Could not perform validation on field type!'} = 'Nem sikerült végrehajtani az ellenőrzést a típus mezőn!';
+    $Self->{Translation}->{'Could not perform validation on field priority!'} = 'Nem sikerült végrehajtani az ellenőrzést a prioritás mezőn!';
 
     # SysConfig
     $Self->{Translation}->{'Determines the next possible ticket states, after the creation of a new ticket from a calendar appointment in the agent interface.'} =
-        '';
+        'Meghatározza a következő lehetséges jegyállapotokat egy naptáridőpontból származó új jegy létrehozása után az ügyintézői felületen.';
     $Self->{Translation}->{'Dynamic fields shown in the appointment edit screen of the agent interface'} =
-        '';
+        'Az ügyintézői felület időpont szerkesztése képernyőjén megjelenített dinamikus mezők';
     $Self->{Translation}->{'Sets the default next state for new tickets in the AgentAppointmentEdit interface.'} =
-        '';
+        'Beállítja az új jegyek alapértelmezett következő állapotát az időpont szerkesztésénél az ügyintézői felületen.';
     $Self->{Translation}->{'Sets the default priority for new tickets in the AgentAppointmentEdit interface.'} =
-        '';
+        'Beállítja az új jegyek alapértelmezett prioritását az időpont szerkesztésénél az ügyintézői felületen.';
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (

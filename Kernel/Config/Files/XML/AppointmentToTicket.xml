@@ -54,7 +54,7 @@
         </Value>
     </Setting>
     <Setting Name="Loader::Module::AgentAppointmentCalendarOverview###009-AppointmentTicket" Required="0" Valid="1">
-        <Description Translatable="1">Loadermodule registration for the agent interface.</Description>
+        <Description Translatable="1">Loader module registration for the agent interface.</Description>
         <Navigation>Frontend::Agent::ModuleRegistration::Loader</Navigation>
         <Value>
             <Hash>

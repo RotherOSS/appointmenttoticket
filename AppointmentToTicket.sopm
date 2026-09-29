@@ -7,6 +7,7 @@
     <URL>https://rother-oss.com/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
     <Description Lang="en">This package brings the functionality to automatically create a ticket with configurable parameters to a freely chooseable point in time in relation to an appointment.</Description>
+    <Description Lang="hu">Ez a csomag azt a funkciót adja hozzá, hogy automatikusan létre lehessen hozni egy beállítható paraméterekkel rendelkező jegyet egy szabadon választható időpontra egy naptáridőponttal kapcsolatban.</Description>
     <Filelist>
         <File Permission="660" Location="Custom/Kernel/Modules/AgentAppointmentEdit.pm" />
         <File Permission="660" Location="Custom/Kernel/Output/HTML/Templates/Standard/AgentAppointmentEdit.tt" />
@@ -14,6 +15,7 @@
         <File Permission="660" Location="Custom/Kernel/System/Daemon/SchedulerDB.pm" />
         <File Permission="660" Location="Kernel/Config/Files/XML/AppointmentToTicket.xml" />
         <File Permission="660" Location="Kernel/Language/de_AppointmentToTicket.pm" />
+        <File Permission="660" Location="Kernel/Language/hu_AppointmentToTicket.pm" />
         <File Permission="660" Location="Kernel/System/Daemon/DaemonModules/SchedulerTaskWorker/AppointmentTicket.pm" />
         <File Permission="660" Location="scripts/test/AppointmentToTicket/AppointmentToTicket.t" />
         <File Permission="660" Location="scripts/test/Daemon/SchedulerDBFutureTaskUpdate.t" />

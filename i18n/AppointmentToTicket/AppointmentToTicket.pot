@@ -55,10 +55,6 @@ msgid "Dynamic fields shown in the appointment edit screen of the agent interfac
 msgstr ""
 
 #. SysConfig
-msgid "Loadermodule registration for the agent interface."
-msgstr ""
-
-#. SysConfig
 msgid "Sets the default next state for new tickets in the AgentAppointmentEdit interface."
 msgstr ""
 
