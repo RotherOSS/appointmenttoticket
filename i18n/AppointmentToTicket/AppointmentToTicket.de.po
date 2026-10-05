@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AppointmentToTicket\n"
-"POT-Creation-Date: 2024-11-13 16:03+0000\n"
+"POT-Creation-Date: 2026-07-27 06:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,8 @@ msgstr "Die Überprüfung des Feldes dest konnte nicht durchgeführt werden!"
 
 #. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
 msgid "Could not perform validation on field next state!"
-msgstr "Die Überprüfung des Feldes next state konnte nicht durchgeführt werden!"
+msgstr ""
+"Die Überprüfung des Feldes next state konnte nicht durchgeführt werden!"
 
 #. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
 msgid "Could not perform validation on field service!"
@@ -47,22 +48,42 @@ msgid "Could not perform validation on field priority!"
 msgstr "Die Überprüfung des Feldes Priorität konnte nicht durchgeführt werden!"
 
 #. SysConfig
-msgid "Determines the next possible ticket states, after the creation of a new ticket from a calendar appointment in the agent interface."
-msgstr "Ermittelt die nächstmöglichen Ticketstatus, nachdem ein neues Ticket aus einem Kalendertermin in der Agentenoberfläche erstellt wurde."
+msgid ""
+"Define a list of dynamic field object types which are allowed to be assigned "
+"to actions of this package via the dynamic field screens interface."
+msgstr ""
 
 #. SysConfig
-msgid "Dynamic fields shown in the appointment edit screen of the agent interface."
-msgstr "Dynamische Felder, die in der Terminbearbeitungsmaske der Agentenschnittstelle angezeigt werden"
+msgid ""
+"Determines the next possible ticket states, after the creation of a new "
+"ticket from a calendar appointment in the agent interface."
+msgstr ""
+"Ermittelt die nächstmöglichen Ticketstatus, nachdem ein neues Ticket aus "
+"einem Kalendertermin in der Agentenoberfläche erstellt wurde."
+
+#. SysConfig
+msgid ""
+"Dynamic fields shown in the appointment edit screen of the agent interface."
+msgstr ""
+"Dynamische Felder, die in der Terminbearbeitungsmaske der "
+"Agentenschnittstelle angezeigt werden"
 
 #. SysConfig
 msgid "Loadermodule registration for the agent interface."
 msgstr "Loadermodul-Registrierung für die Agentenschnittstelle."
 
 #. SysConfig
-msgid "Sets the default next state for new tickets in the AgentAppointmentEdit interface."
-msgstr "Legt den Standardnachfolgestatus für neue Tickets in der Schnittstelle AgentAppointmentEdit fest."
+msgid ""
+"Sets the default next state for new tickets in the AgentAppointmentEdit "
+"interface."
+msgstr ""
+"Legt den Standardnachfolgestatus für neue Tickets in der Schnittstelle "
+"AgentAppointmentEdit fest."
 
 #. SysConfig
-msgid "Sets the default priority for new tickets in the AgentAppointmentEdit interface."
-msgstr "Legt die Standardpriorität für neue Tickets in der Schnittstelle AgentAppointmentEdit fest."
-
+msgid ""
+"Sets the default priority for new tickets in the AgentAppointmentEdit "
+"interface."
+msgstr ""
+"Legt die Standardpriorität für neue Tickets in der Schnittstelle "
+"AgentAppointmentEdit fest."
