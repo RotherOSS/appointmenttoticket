@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 12:07+0000\n"
+"POT-Creation-Date: 2026-07-23 06:32+0000\n"
 "PO-Revision-Date: 2026-10-05 06:42+0000\n"
 "Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
 "Language-Team: Japanese <http://translate.otobo.org/projects/otobo-11-0/"
@@ -60,7 +60,8 @@ msgstr "スクリーンショットは、新しく追加された項目を示し
 
 #: ../content/index.rst:21
 msgid "The screenshot shows the newly available fields for ticket creation."
-msgstr "スクリーンショットは、チケット作成用に新しく追加された項目を示しています。"
+msgstr ""
+"スクリーンショットは、チケット作成用に新しく追加された項目を示しています。"
 
 #: ../content/index.rst:24
 msgid "System requirements"
@@ -87,69 +88,52 @@ msgid "Third-party software"
 msgstr "サードパーティ製ソフトウェア"
 
 #: ../content/index.rst:39
+msgid "Usage"
+msgstr ""
+
+#: ../content/index.rst:42
+msgid "Setup"
+msgstr ""
+
+#: ../content/index.rst:45
 msgid "Configuration Reference"
 msgstr "設定リファレンス"
 
-#: ../content/index.rst:42
+#: ../content/index.rst:48
 msgid "Frontend::Agent::ModuleRegistration::Loader"
 msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
-#: ../content/index.rst:45
+#: ../content/index.rst:51
 msgid ""
 "Loader::Module::AgentAppointmentCalendarOverview###009-AppointmentTicket"
 msgstr ""
 "Loader::Module::AgentAppointmentCalendarOverview###009-AppointmentTicket"
 
-#: ../content/index.rst:46
+#: ../content/index.rst:52
 msgid "Loadermodule registration for the agent interface."
 msgstr "担当者インタフェース用のローダーモジュールの登録。"
 
-#: ../content/index.rst:49
+#: ../content/index.rst:55
 msgid "Frontend::Agent::View::AgentAppointmentEdit"
 msgstr "Frontend::Agent::View::AgentAppointmentEdit"
 
-#: ../content/index.rst:52
-msgid "Ticket::Frontend::AgentAppointmentEdit###ServiceMandatory"
-msgstr "Ticket::Frontend::AgentAppointmentEdit###ServiceMandatory"
-
-#: ../content/index.rst:53
-msgid "Sets if service must be selected by the agent."
-msgstr "担当者がサービスを選択する必要があるかどうかを設定します。"
-
-#: ../content/index.rst:56
+#: ../content/index.rst:58
 msgid "Ticket::Frontend::AgentAppointmentEdit###DynamicField"
 msgstr "Ticket::Frontend::AgentAppointmentEdit###DynamicField"
 
-#: ../content/index.rst:57
+#: ../content/index.rst:59
+#, fuzzy
+#| msgid ""
+#| "Dynamic fields shown in the appointment edit screen of the agent interface"
 msgid ""
-"Dynamic fields shown in the appointment edit screen of the agent interface"
+"Dynamic fields shown in the appointment edit screen of the agent interface."
 msgstr "担当者インタフェースの予約編集画面に表示するダイナミックフィールド"
 
-#: ../content/index.rst:60
-msgid "Ticket::Frontend::AgentAppointmentEdit###StateDefault"
-msgstr "Ticket::Frontend::AgentAppointmentEdit###StateDefault"
-
-#: ../content/index.rst:61
-msgid ""
-"Sets the default next state for new tickets in the AgentAppointmentEdit "
-"interface."
-msgstr ""
-"AgentAppointmentEdit インタフェースで、新規チケットのデフォルトの次の"
-"ステータスを設定します。"
-
-#: ../content/index.rst:64
-msgid "Ticket::Frontend::AgentAppointmentEdit###SLAMandatory"
-msgstr "Ticket::Frontend::AgentAppointmentEdit###SLAMandatory"
-
-#: ../content/index.rst:65
-msgid "Sets if SLA must be selected by the agent."
-msgstr "担当者が SLA を選択する必要があるかどうかを設定します。"
-
-#: ../content/index.rst:68
+#: ../content/index.rst:62
 msgid "Ticket::Frontend::AgentAppointmentEdit###Priority"
 msgstr "Ticket::Frontend::AgentAppointmentEdit###Priority"
 
-#: ../content/index.rst:69
+#: ../content/index.rst:63
 msgid ""
 "Sets the default priority for new tickets in the AgentAppointmentEdit "
 "interface."
@@ -157,15 +141,43 @@ msgstr ""
 "AgentAppointmentEdit インタフェースで、新規チケットのデフォルトの優先度を設定"
 "します。"
 
-#: ../content/index.rst:72
+#: ../content/index.rst:66
+msgid "Ticket::Frontend::AgentAppointmentEdit###SLAMandatory"
+msgstr "Ticket::Frontend::AgentAppointmentEdit###SLAMandatory"
+
+#: ../content/index.rst:67
+msgid "Sets if SLA must be selected by the agent."
+msgstr "担当者が SLA を選択する必要があるかどうかを設定します。"
+
+#: ../content/index.rst:70
+msgid "Ticket::Frontend::AgentAppointmentEdit###ServiceMandatory"
+msgstr "Ticket::Frontend::AgentAppointmentEdit###ServiceMandatory"
+
+#: ../content/index.rst:71
+msgid "Sets if service must be selected by the agent."
+msgstr "担当者がサービスを選択する必要があるかどうかを設定します。"
+
+#: ../content/index.rst:74
+msgid "Ticket::Frontend::AgentAppointmentEdit###StateDefault"
+msgstr "Ticket::Frontend::AgentAppointmentEdit###StateDefault"
+
+#: ../content/index.rst:75
+msgid ""
+"Sets the default next state for new tickets in the AgentAppointmentEdit "
+"interface."
+msgstr ""
+"AgentAppointmentEdit インタフェースで、新規チケットのデフォルトの次のステータ"
+"スを設定します。"
+
+#: ../content/index.rst:78
 msgid "Frontend::Agent::View::TicketCalendar"
 msgstr "Frontend::Agent::View::TicketCalendar"
 
-#: ../content/index.rst:75
+#: ../content/index.rst:81
 msgid "Ticket::Frontend::AgentAppointmentEdit###StateType"
 msgstr "Ticket::Frontend::AgentAppointmentEdit###StateType"
 
-#: ../content/index.rst:76
+#: ../content/index.rst:82
 msgid ""
 "Determines the next possible ticket states, after the creation of a new "
 "ticket from a calendar appointment in the agent interface."
@@ -173,15 +185,15 @@ msgstr ""
 "担当者インタフェースで、カレンダーの予約から新規チケットを作成した後に選択可"
 "能なチケットステータスを決定します。"
 
-#: ../content/index.rst:79
+#: ../content/index.rst:85
 msgid "Frontend::Base::DynamicFieldScreens"
 msgstr "Frontend::Base::DynamicFieldScreens"
 
-#: ../content/index.rst:82
+#: ../content/index.rst:88
 msgid "DynamicFieldScreens###AppointmentTickets"
 msgstr "DynamicFieldScreens###AppointmentTickets"
 
-#: ../content/index.rst:83
+#: ../content/index.rst:89
 msgid ""
 "This configuration defines all possible screens to enable or disable dynamic "
 "fields."
@@ -189,31 +201,47 @@ msgstr ""
 "この設定は、ダイナミックフィールドを有効または無効にできるすべての画面を定義"
 "します。"
 
-#: ../content/index.rst:86
+#: ../content/index.rst:92
+#, fuzzy
+#| msgid "DynamicFieldScreens###AppointmentTickets"
+msgid "DynamicFieldScreens::ObjectTypes###AppointmentTickets"
+msgstr "DynamicFieldScreens###AppointmentTickets"
+
+#: ../content/index.rst:93
+msgid ""
+"Define a list of dynamic field object types which are allowed to be assigned "
+"to actions of this package via the dynamic field screens interface."
+msgstr ""
+
+#: ../content/index.rst:96
 msgid "About"
 msgstr "概要"
 
-#: ../content/index.rst:89
+#: ../content/index.rst:99
 msgid "Contact"
 msgstr "連絡先"
 
-#: ../content/index.rst:90
+#: ../content/index.rst:100
 msgid "Rother OSS GmbH"
 msgstr "Rother OSS GmbH"
 
-#: ../content/index.rst:91
-msgid "Email: hello@otobo.de"
+#: ../content/index.rst:101
+#, fuzzy
+#| msgid "Email: hello@otobo.de"
+msgid "Email: hello@otobo.io"
 msgstr "メール: hello@otobo.de"
 
-#: ../content/index.rst:92
-msgid "Web: https://otobo.de"
+#: ../content/index.rst:102
+#, fuzzy
+#| msgid "Web: https://otobo.de"
+msgid "Web: https://otobo.io"
 msgstr "Web: https://otobo.de"
 
-#: ../content/index.rst:95
+#: ../content/index.rst:105
 msgid "Version"
 msgstr "バージョン"
 
-#: ../content/index.rst:96
+#: ../content/index.rst:106
 msgid ""
 "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
 "datestamp|"
