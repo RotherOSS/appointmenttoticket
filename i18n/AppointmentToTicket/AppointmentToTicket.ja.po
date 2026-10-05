@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: AppointmentToTicket\n"
+"POT-Creation-Date: 2026-07-27 06:53+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. Template: AgentAppointmentEdit
+msgid "Ticket Creation"
+msgstr ""
+
+#. Template: AgentAppointmentEdit
+msgid "Article is visible for customer"
+msgstr ""
+
+#. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
+msgid "No ticket creation"
+msgstr ""
+
+#. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
+msgid "Could not perform validation on field dest!"
+msgstr ""
+
+#. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
+msgid "Could not perform validation on field next state!"
+msgstr ""
+
+#. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
+msgid "Could not perform validation on field service!"
+msgstr ""
+
+#. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
+msgid "Could not perform validation on field SLA!"
+msgstr ""
+
+#. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
+msgid "Could not perform validation on field type!"
+msgstr ""
+
+#. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
+msgid "Could not perform validation on field priority!"
+msgstr ""
+
+#. SysConfig
+msgid "Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface."
+msgstr ""
+
+#. SysConfig
+msgid "Determines the next possible ticket states, after the creation of a new ticket from a calendar appointment in the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Dynamic fields shown in the appointment edit screen of the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Loadermodule registration for the agent interface."
+msgstr ""
+
+#. SysConfig
+msgid "Sets the default next state for new tickets in the AgentAppointmentEdit interface."
+msgstr ""
+
+#. SysConfig
+msgid "Sets the default priority for new tickets in the AgentAppointmentEdit interface."
+msgstr ""
