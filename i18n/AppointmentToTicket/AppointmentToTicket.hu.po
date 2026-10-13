@@ -2,22 +2,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AppointmentToTicket\n"
 "POT-Creation-Date: 2026-07-27 06:53+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-10-13 09:41+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
+"addons/appointmenttoticket/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2026.9\n"
 
 #. Template: AgentAppointmentEdit
 msgid "Ticket Creation"
-msgstr ""
+msgstr "Jegy létrehozva"
 
 #. Template: AgentAppointmentEdit
 msgid "Article is visible for customer"
-msgstr ""
+msgstr "A bejegyzés látható az ügyfélnek"
 
 #. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
 msgid "No ticket creation"
@@ -25,48 +27,59 @@ msgstr ""
 
 #. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
 msgid "Could not perform validation on field dest!"
-msgstr ""
+msgstr "Nem sikerült végrehajtani az ellenőrzést a következő mezőn: %s!"
 
 #. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
 msgid "Could not perform validation on field next state!"
-msgstr ""
+msgstr "Nem sikerült végrehajtani az ellenőrzést a következő mezőn: %s!"
 
 #. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
 msgid "Could not perform validation on field service!"
-msgstr ""
+msgstr "Nem sikerült végrehajtani az ellenőrzést a következő mezőn: %s!"
 
 #. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
 msgid "Could not perform validation on field SLA!"
-msgstr ""
+msgstr "Nem sikerült végrehajtani az ellenőrzést a következő mezőn: %s!"
 
 #. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
 msgid "Could not perform validation on field type!"
-msgstr ""
+msgstr "Nem sikerült végrehajtani az ellenőrzést a következő mezőn: %s!"
 
 #. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
 msgid "Could not perform validation on field priority!"
-msgstr ""
+msgstr "Nem sikerült végrehajtani az ellenőrzést a következő mezőn: %s!"
 
 #. SysConfig
 msgid "Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface."
 msgstr ""
+"Azon dinamikus mező objektumtípusok listájának meghatározása, amelyek "
+"hozzárendelhetők a csomag műveleteihez a dinamikus mező képernyőinek "
+"felületén keresztül."
 
 #. SysConfig
 msgid "Determines the next possible ticket states, after the creation of a new ticket from a calendar appointment in the agent interface."
 msgstr ""
+"Meghatározza a következő lehetséges jegyállapotokat egy naptáridőpontból "
+"származó új jegy létrehozása után az ügyintézői felületen."
 
 #. SysConfig
 msgid "Dynamic fields shown in the appointment edit screen of the agent interface."
 msgstr ""
+"Az ügyintézői felület időpont szerkesztése képernyőjén megjelenített "
+"dinamikus mezők."
 
 #. SysConfig
 msgid "Loadermodule registration for the agent interface."
-msgstr ""
+msgstr "Betöltőmodul regisztráció az ügyintézői felülethez."
 
 #. SysConfig
 msgid "Sets the default next state for new tickets in the AgentAppointmentEdit interface."
 msgstr ""
+"Beállítja az új jegyek alapértelmezett következő állapotát az időpont "
+"szerkesztésénél az ügyintézői felületen."
 
 #. SysConfig
 msgid "Sets the default priority for new tickets in the AgentAppointmentEdit interface."
 msgstr ""
+"Beállítja az új jegyek alapértelmezett prioritását az időpont "
+"szerkesztésénél az ügyintézői felületen."
