@@ -41,7 +41,6 @@ sub Data {
         '';
     $Self->{Translation}->{'Dynamic fields shown in the appointment edit screen of the agent interface'} =
         '';
-    $Self->{Translation}->{'Loadermodule registration for the agent interface.'} = '';
     $Self->{Translation}->{'Sets the default next state for new tickets in the AgentAppointmentEdit interface.'} =
         '';
     $Self->{Translation}->{'Sets the default priority for new tickets in the AgentAppointmentEdit interface.'} =
