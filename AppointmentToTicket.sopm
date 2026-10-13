@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <otobo_package version="1.0">
     <Name>AppointmentToTicket</Name>
-    <Version>10.1.0</Version>
+    <Version>0.0.0</Version>
     <Framework>10.1.x</Framework>
     <Vendor>Rother OSS GmbH</Vendor>
-    <URL>https://rother-oss.com/</URL>
+    <URL>https://otobo.io/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
     <Description Lang="en">This package brings the functionality to automatically create a ticket with configurable parameters to a freely chooseable point in time in relation to an appointment.</Description>
     <Description Lang="hu">Ez a csomag azt a funkciót adja hozzá, hogy automatikusan létre lehessen hozni egy beállítható paraméterekkel rendelkező jegyet egy szabadon választható időpontra egy naptáridőponttal kapcsolatban.</Description>
@@ -22,6 +22,7 @@
         <File Permission="660" Location="var/packagesetup/AppointmentToTicket.pm" />
         <File Permission="660" Location="var/httpd/htdocs/js/Core.Agent.AppointmentCalendar.js" />
         <File Permission="660" Location="var/httpd/htdocs/js/Core.Agent.CustomerSearch.js" />
+<!--        <File Permission="660" Location="var/httpd/htdocs/js/Core.UI.Dialog.js" /> -->
     </Filelist>
     <DatabaseInstall Type="post">
         <TableAlter Name="calendar_appointment">
