@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AppointmentToTicket\n"
 "POT-Creation-Date: 2026-07-27 06:53+0000\n"
-"PO-Revision-Date: 2026-10-13 09:41+0000\n"
-"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"PO-Revision-Date: 2026-10-13 14:41+0000\n"
+"Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/appointmenttoticket/hu/>\n"
 "Language: hu\n"
@@ -15,7 +15,7 @@ msgstr ""
 
 #. Template: AgentAppointmentEdit
 msgid "Ticket Creation"
-msgstr "Jegy létrehozva"
+msgstr "Jegylétrehozás"
 
 #. Template: AgentAppointmentEdit
 msgid "Article is visible for customer"
@@ -23,31 +23,31 @@ msgstr "A bejegyzés látható az ügyfélnek"
 
 #. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
 msgid "No ticket creation"
-msgstr ""
+msgstr "Nincs jegylétrehozás"
 
 #. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
 msgid "Could not perform validation on field dest!"
-msgstr "Nem sikerült végrehajtani az ellenőrzést a következő mezőn: %s!"
+msgstr "Nem sikerült végrehajtani az ellenőrzést a cél mezőn!"
 
 #. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
 msgid "Could not perform validation on field next state!"
-msgstr "Nem sikerült végrehajtani az ellenőrzést a következő mezőn: %s!"
+msgstr "Nem sikerült végrehajtani az ellenőrzést a következő állapot mezőn!"
 
 #. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
 msgid "Could not perform validation on field service!"
-msgstr "Nem sikerült végrehajtani az ellenőrzést a következő mezőn: %s!"
+msgstr "Nem sikerült végrehajtani az ellenőrzést a szolgáltatás mezőn!"
 
 #. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
 msgid "Could not perform validation on field SLA!"
-msgstr "Nem sikerült végrehajtani az ellenőrzést a következő mezőn: %s!"
+msgstr "Nem sikerült végrehajtani az ellenőrzést az SLA mezőn!"
 
 #. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
 msgid "Could not perform validation on field type!"
-msgstr "Nem sikerült végrehajtani az ellenőrzést a következő mezőn: %s!"
+msgstr "Nem sikerült végrehajtani az ellenőrzést a típus mezőn!"
 
 #. Perl Module: Kernel/Modules/AgentAppointmentEdit.pm
 msgid "Could not perform validation on field priority!"
-msgstr "Nem sikerült végrehajtani az ellenőrzést a következő mezőn: %s!"
+msgstr "Nem sikerült végrehajtani az ellenőrzést a prioritás mezőn!"
 
 #. SysConfig
 msgid "Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface."
