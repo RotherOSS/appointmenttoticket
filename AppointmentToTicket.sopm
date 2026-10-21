@@ -16,6 +16,7 @@
         <File Permission="660" Location="Kernel/Config/Files/XML/AppointmentToTicket.xml" />
         <File Permission="660" Location="Kernel/Language/de_AppointmentToTicket.pm" />
         <File Permission="660" Location="Kernel/Language/hu_AppointmentToTicket.pm" />
+        <File Permission="660" Location="Kernel/Language/ja_AppointmentToTicket.pm" />
         <File Permission="660" Location="Kernel/System/Daemon/DaemonModules/SchedulerTaskWorker/AppointmentTicket.pm" />
         <File Permission="660" Location="scripts/test/AppointmentToTicket/AppointmentToTicket.t" />
         <File Permission="660" Location="scripts/test/Daemon/SchedulerDBFutureTaskUpdate.t" />

@@ -37,10 +37,12 @@ sub Data {
     $Self->{Translation}->{'Could not perform validation on field priority!'} = 'Nem sikerült végrehajtani az ellenőrzést a prioritás mezőn!';
 
     # SysConfig
+    $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
+        'Azon dinamikus mező objektumtípusok listájának meghatározása, amelyek hozzárendelhetők a csomag műveleteihez a dinamikus mező képernyőinek felületén keresztül.';
     $Self->{Translation}->{'Determines the next possible ticket states, after the creation of a new ticket from a calendar appointment in the agent interface.'} =
         'Meghatározza a következő lehetséges jegyállapotokat egy naptáridőpontból származó új jegy létrehozása után az ügyintézői felületen.';
-    $Self->{Translation}->{'Dynamic fields shown in the appointment edit screen of the agent interface'} =
-        'Az ügyintézői felület időpont szerkesztése képernyőjén megjelenített dinamikus mezők';
+    $Self->{Translation}->{'Dynamic fields shown in the appointment edit screen of the agent interface.'} =
+        'Az ügyintézői felület időpont szerkesztése képernyőjén megjelenített dinamikus mezők.';
     $Self->{Translation}->{'Sets the default next state for new tickets in the AgentAppointmentEdit interface.'} =
         'Beállítja az új jegyek alapértelmezett következő állapotát az időpont szerkesztésénél az ügyintézői felületen.';
     $Self->{Translation}->{'Sets the default priority for new tickets in the AgentAppointmentEdit interface.'} =
@@ -90,7 +92,6 @@ sub Data {
     'Next',
     'Nov',
     'November',
-    'OK',
     'Oct',
     'October',
     'Please either turn some off first or increase the limit in configuration.',

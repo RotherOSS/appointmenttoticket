@@ -43,7 +43,6 @@ sub Data {
         'Ermittelt die nächstmöglichen Ticketstatus, nachdem ein neues Ticket aus einem Kalendertermin in der Agentenoberfläche erstellt wurde.';
     $Self->{Translation}->{'Dynamic fields shown in the appointment edit screen of the agent interface.'} =
         'Dynamische Felder, die in der Terminbearbeitungsmaske der Agentenschnittstelle angezeigt werden';
-    $Self->{Translation}->{'Loadermodule registration for the agent interface.'} = 'Loadermodul-Registrierung für die Agentenschnittstelle.';
     $Self->{Translation}->{'Sets the default next state for new tickets in the AgentAppointmentEdit interface.'} =
         'Legt den Standardnachfolgestatus für neue Tickets in der Schnittstelle AgentAppointmentEdit fest.';
     $Self->{Translation}->{'Sets the default priority for new tickets in the AgentAppointmentEdit interface.'} =

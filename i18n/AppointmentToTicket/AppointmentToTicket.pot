@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AppointmentToTicket\n"
-"POT-Creation-Date: 2026-07-27 06:53+0000\n"
+"POT-Creation-Date: 2026-10-21 14:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,10 +56,6 @@ msgstr ""
 
 #. SysConfig
 msgid "Dynamic fields shown in the appointment edit screen of the agent interface."
-msgstr ""
-
-#. SysConfig
-msgid "Loadermodule registration for the agent interface."
 msgstr ""
 
 #. SysConfig
