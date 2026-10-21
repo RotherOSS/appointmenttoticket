@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AppointmentToTicket\n"
-"POT-Creation-Date: 2024-05-25 04:08+0000\n"
+"POT-Creation-Date: 2026-10-21 13:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgid "Determines the next possible ticket states, after the creation of a new t
 msgstr ""
 
 #. SysConfig
-msgid "Dynamic fields shown in the appointment edit screen of the agent interface"
+msgid "Dynamic fields shown in the appointment edit screen of the agent interface."
 msgstr ""
 
 #. SysConfig

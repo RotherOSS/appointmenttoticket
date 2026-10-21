@@ -39,7 +39,7 @@ sub Data {
     # SysConfig
     $Self->{Translation}->{'Determines the next possible ticket states, after the creation of a new ticket from a calendar appointment in the agent interface.'} =
         '';
-    $Self->{Translation}->{'Dynamic fields shown in the appointment edit screen of the agent interface'} =
+    $Self->{Translation}->{'Dynamic fields shown in the appointment edit screen of the agent interface.'} =
         '';
     $Self->{Translation}->{'Sets the default next state for new tickets in the AgentAppointmentEdit interface.'} =
         '';
