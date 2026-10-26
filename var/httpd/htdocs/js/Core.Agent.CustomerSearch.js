@@ -4,7 +4,7 @@
 // Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
 // Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 // --
-// $origin: otobo - deb99d60daf212ae73ec7feb78074f3f7ae563f8 - var/httpd/htdocs/js/Core.Agent.CustomerSearch.js
+// $origin: otobo - 58face22df4b35672097ced8484bed7f2b4f2df7 - var/httpd/htdocs/js/Core.Agent.CustomerSearch.js
 // --
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software
@@ -755,7 +755,7 @@ Core.Agent.CustomerSearch = (function (TargetNS) {
         // increment customer counter
         CustomerTicketCounter++;
 
-        // set sufix
+        // set suffix
         Suffix = '_' + CustomerTicketCounter;
 
         // remove unnecessary classes
@@ -998,7 +998,7 @@ Core.Agent.CustomerSearch = (function (TargetNS) {
                 return false;
             }
 
-            // if autocompletion is disabled and only avaible via the click
+            // if autocompletion is disabled and only available via the click
             // of a button next to the input field, we cannot handle this
             // change event the normal way.
             if (!Core.UI.Autocomplete.GetConfig('ActiveAutoComplete')) {
@@ -1006,7 +1006,7 @@ Core.Agent.CustomerSearch = (function (TargetNS) {
                 // for this field was pressed. If so, no action is needed
                 // If the change event was fired without clicking the search button,
                 // probably the user clicked out of the field.
-                // This should also add the customer (the enetered value) to the list
+                // This should also add the customer (the entered value) to the list
 
                 if (typeof CustomerFieldChangeRunCount[ObjectId] === 'undefined') {
                     CustomerFieldChangeRunCount[ObjectId] = 1;
