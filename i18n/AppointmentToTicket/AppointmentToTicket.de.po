@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AppointmentToTicket\n"
-"POT-Creation-Date: 2026-07-27 06:53+0000\n"
+"POT-Creation-Date: 2026-10-21 14:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,10 +69,6 @@ msgstr ""
 "Agentenschnittstelle angezeigt werden"
 
 #. SysConfig
-msgid "Loadermodule registration for the agent interface."
-msgstr "Loadermodul-Registrierung für die Agentenschnittstelle."
-
-#. SysConfig
 msgid ""
 "Sets the default next state for new tickets in the AgentAppointmentEdit "
 "interface."
@@ -87,3 +83,6 @@ msgid ""
 msgstr ""
 "Legt die Standardpriorität für neue Tickets in der Schnittstelle "
 "AgentAppointmentEdit fest."
+
+#~ msgid "Loadermodule registration for the agent interface."
+#~ msgstr "Loadermodul-Registrierung für die Agentenschnittstelle."
