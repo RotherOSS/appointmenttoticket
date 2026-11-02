@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-23 06:32+0000\n"
-"PO-Revision-Date: 2026-06-24 13:00+0000\n"
+"PO-Revision-Date: 2026-11-02 17:41+0000\n"
 "Last-Translator: Stefan Abel <sta@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/"
 "manuals/appointmenttoticket-documentation/de/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.16\n"
+"X-Generator: Weblate 2026.9\n"
 "Generated-By: Babel 2.4.0\n"
 
 #: ../content/index.rst:5
@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../content/index.rst:45
 msgid "Configuration Reference"
-msgstr "Konfigurationsreferenz"
+msgstr "Konfigurations-Referenz"
 
 #: ../content/index.rst:48
 msgid "Frontend::Agent::ModuleRegistration::Loader"
