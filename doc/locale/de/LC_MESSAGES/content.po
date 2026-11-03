@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-23 06:32+0000\n"
-"PO-Revision-Date: 2026-11-02 17:41+0000\n"
+"PO-Revision-Date: 2026-11-03 14:41+0000\n"
 "Last-Translator: Stefan Abel <sta@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/"
 "manuals/appointmenttoticket-documentation/de/>\n"
@@ -22,10 +22,8 @@ msgstr ""
 "Generated-By: Babel 2.4.0\n"
 
 #: ../content/index.rst:5
-#, fuzzy
-#| msgid "Contact"
 msgid "Contents"
-msgstr "Kontakt"
+msgstr "Inhalt"
 
 #: ../content/index.rst:10
 msgid "Description"
