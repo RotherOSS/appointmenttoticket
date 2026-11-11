@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-23 06:32+0000\n"
-"PO-Revision-Date: 2026-11-03 14:41+0000\n"
-"Last-Translator: Stefan Abel <sta@rother-oss.com>\n"
+"PO-Revision-Date: 2026-11-11 09:00+0000\n"
+"Last-Translator: Jasmin Hammes <jasmin.hammes@rother-oss.com>\n"
 "Language-Team: German <http://translate.otobo.org/projects/otobo-11-1/addons/"
 "manuals/appointmenttoticket-documentation/de/>\n"
 "Language: de\n"
@@ -53,14 +53,17 @@ msgstr ""
 #: ../content/index.rst:15
 msgid "The feature as of now does not support dynamic fields of type database."
 msgstr ""
+"Die Funktion unterstützt zum jetzigen Zeitpunkt keine dynamischen Felder vom "
+"Typ Database."
 
 #: ../content/index.rst:17
 msgid "The sreenshot shows the newly available fields."
-msgstr ""
+msgstr "Der Screenshot zeigt die neu verfügbaren Felder."
 
 #: ../content/index.rst:21
 msgid "The screenshot shows the newly available fields for ticket creation."
 msgstr ""
+"Der Screenshot zeigt die neu verfügbaren Felder für die Ticketerstellung."
 
 #: ../content/index.rst:24
 msgid "System requirements"
@@ -90,11 +93,11 @@ msgstr "Drittanbieter-Software"
 
 #: ../content/index.rst:39
 msgid "Usage"
-msgstr ""
+msgstr "Benutzung"
 
 #: ../content/index.rst:42
 msgid "Setup"
-msgstr ""
+msgstr "Setup"
 
 #: ../content/index.rst:45
 msgid "Configuration Reference"
@@ -112,7 +115,7 @@ msgstr ""
 
 #: ../content/index.rst:52
 msgid "Loadermodule registration for the agent interface."
-msgstr ""
+msgstr "Registrierung des Loader-Moduls für die Agentenoberfläche."
 
 #: ../content/index.rst:55
 msgid "Frontend::Agent::View::AgentAppointmentEdit"
@@ -126,6 +129,8 @@ msgstr "Ticket::Frontend::AgentAppointmentEdit###DynamicField"
 msgid ""
 "Dynamic fields shown in the appointment edit screen of the agent interface."
 msgstr ""
+"Dynamische Felder, die im Bearbeitungsmodus für Termine der "
+"Agentenoberfläche angezeigt werden."
 
 #: ../content/index.rst:62
 msgid "Ticket::Frontend::AgentAppointmentEdit###Priority"
@@ -136,6 +141,8 @@ msgid ""
 "Sets the default priority for new tickets in the AgentAppointmentEdit "
 "interface."
 msgstr ""
+"Legt die Standardpriorität für neue Tickets in der Bearbeitungsansicht für "
+"Termine in der Agentenoberfläche fest."
 
 #: ../content/index.rst:66
 msgid "Ticket::Frontend::AgentAppointmentEdit###SLAMandatory"
@@ -143,7 +150,7 @@ msgstr "Ticket::Frontend::AgentAppointmentEdit###SLAMandatory"
 
 #: ../content/index.rst:67
 msgid "Sets if SLA must be selected by the agent."
-msgstr ""
+msgstr "Legt fest, ob die SLA vom Agenten ausgewählt werden muss."
 
 #: ../content/index.rst:70
 msgid "Ticket::Frontend::AgentAppointmentEdit###ServiceMandatory"
@@ -151,7 +158,7 @@ msgstr "Ticket::Frontend::AgentAppointmentEdit###ServiceMandatory"
 
 #: ../content/index.rst:71
 msgid "Sets if service must be selected by the agent."
-msgstr ""
+msgstr "Legt fest, ob der Service vom Agenten ausgewählt werden muss."
 
 #: ../content/index.rst:74
 msgid "Ticket::Frontend::AgentAppointmentEdit###StateDefault"
@@ -162,6 +169,8 @@ msgid ""
 "Sets the default next state for new tickets in the AgentAppointmentEdit "
 "interface."
 msgstr ""
+"Legt den Standardstatus für neue Tickets in der Bearbeitungsansicht für "
+"Termine in der Agentenoberfläche fest."
 
 #: ../content/index.rst:78
 msgid "Frontend::Agent::View::TicketCalendar"
@@ -176,6 +185,8 @@ msgid ""
 "Determines the next possible ticket states, after the creation of a new "
 "ticket from a calendar appointment in the agent interface."
 msgstr ""
+"Legt die möglichen nächsten Ticket-Status fest, nach der Erstellung eines "
+"neuen Tickets aus einem Kalendertermin in der Agentenoberfläche."
 
 #: ../content/index.rst:85
 msgid "Frontend::Base::DynamicFieldScreens"
@@ -190,6 +201,8 @@ msgid ""
 "This configuration defines all possible screens to enable or disable dynamic "
 "fields."
 msgstr ""
+"Diese Konfiguration definiert alle möglichen Bildschirme, in denen "
+"dynamische Felder aktiviert oder deaktiviert werden können."
 
 #: ../content/index.rst:92
 #, fuzzy
@@ -202,6 +215,8 @@ msgid ""
 "Define a list of dynamic field object types which are allowed to be assigned "
 "to actions of this package via the dynamic field screens interface."
 msgstr ""
+"Legen Sie eine Liste von Objekttypen der dynamischen Felder fest, die über "
+"die Schnittstelle den Aktionen dieses Pakets zugewiesen werden dürfen."
 
 #: ../content/index.rst:96
 msgid "About"
