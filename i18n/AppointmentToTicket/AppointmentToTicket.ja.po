@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: AppointmentToTicket\n"
-"POT-Creation-Date: 2026-07-27 06:29+0000\n"
+"POT-Creation-Date: 2026-10-21 13:54+0000\n"
 "PO-Revision-Date: 2026-10-05 06:42+0000\n"
 "Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
 "Language-Team: Japanese <http://translate.otobo.org/projects/otobo-11-0/"
@@ -72,16 +72,12 @@ msgid ""
 msgstr "担当者インタフェースの予約編集画面に表示するダイナミックフィールド。"
 
 #. SysConfig
-msgid "Loadermodule registration for the agent interface."
-msgstr "担当者インタフェース用のローダーモジュールの登録。"
-
-#. SysConfig
 msgid ""
 "Sets the default next state for new tickets in the AgentAppointmentEdit "
 "interface."
 msgstr ""
-"AgentAppointmentEdit インタフェースで、新規チケットのデフォルトの次の"
-"ステータスを設定します。"
+"AgentAppointmentEdit インタフェースで、新規チケットのデフォルトの次のステータ"
+"スを設定します。"
 
 #. SysConfig
 msgid ""
@@ -90,3 +86,6 @@ msgid ""
 msgstr ""
 "AgentAppointmentEdit インタフェースで、新規チケットのデフォルトの優先度を設定"
 "します。"
+
+#~ msgid "Loadermodule registration for the agent interface."
+#~ msgstr "担当者インタフェース用のローダーモジュールの登録。"
