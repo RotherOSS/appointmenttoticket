@@ -38,15 +38,15 @@ sub Data {
 
     # SysConfig
     $Self->{Translation}->{'Define a list of dynamic field object types which are allowed to be assigned to actions of this package via the dynamic field screens interface.'} =
-        '';
+        'Legen Sie eine Liste von Objekttypen der dynamischen Felder fest, die über die Schnittstelle den Aktionen dieses Pakets zugewiesen werden dürfen.';
     $Self->{Translation}->{'Determines the next possible ticket states, after the creation of a new ticket from a calendar appointment in the agent interface.'} =
-        'Ermittelt die nächstmöglichen Ticketstatus, nachdem ein neues Ticket aus einem Kalendertermin in der Agentenoberfläche erstellt wurde.';
+        'Legt die möglichen nächsten Ticket-Status fest, nach der Erstellung eines neuen Tickets aus einem Kalendertermin in der Agentenoberfläche.';
     $Self->{Translation}->{'Dynamic fields shown in the appointment edit screen of the agent interface.'} =
-        'Dynamische Felder, die in der Terminbearbeitungsmaske der Agentenschnittstelle angezeigt werden';
+        'Dynamische Felder, die im Bearbeitungsmodus für Termine der Agentenoberfläche angezeigt werden.';
     $Self->{Translation}->{'Sets the default next state for new tickets in the AgentAppointmentEdit interface.'} =
-        'Legt den Standardnachfolgestatus für neue Tickets in der Schnittstelle AgentAppointmentEdit fest.';
+        'Legt den Standardstatus für neue Tickets in der Bearbeitungsansicht für Termine in der Agentenoberfläche fest.';
     $Self->{Translation}->{'Sets the default priority for new tickets in the AgentAppointmentEdit interface.'} =
-        'Legt die Standardpriorität für neue Tickets in der Schnittstelle AgentAppointmentEdit fest.';
+        'Legt die Standardpriorität für neue Tickets in der Bearbeitungsansicht für Termine in der Agentenoberfläche fest.';
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (
