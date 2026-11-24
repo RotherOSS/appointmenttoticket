@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2024 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -16,10 +16,19 @@
 
 package Kernel::System::Daemon::DaemonModules::SchedulerTaskWorker::AppointmentTicket;
 
+use v5.24;
 use strict;
 use warnings;
+use namespace::autoclean;
+use utf8;
 
 use parent qw(Kernel::System::Daemon::DaemonModules::BaseTaskWorker);
+
+# core modules
+
+# CPAN modules
+
+# OTOBO modules
 use Kernel::System::VariableCheck qw(:all);
 
 our @ObjectDependencies = (
@@ -51,6 +60,7 @@ This task handler executes appointment ticket jobs.
 
     use Kernel::System::ObjectManager;
     local $Kernel::OM = Kernel::System::ObjectManager->new();
+
     my $TaskHandlerObject = $Kernel::OM-Get('Kernel::System::Daemon::DaemonModules::SchedulerTaskWorker::AppointmentTicket');
 
 =cut
@@ -58,8 +68,7 @@ This task handler executes appointment ticket jobs.
 sub new {
     my ( $Type, %Param ) = @_;
 
-    my $Self = {};
-    bless( $Self, $Type );
+    my $Self = bless {}, $Type;
 
     $Self->{Debug}      = $Param{Debug};
     $Self->{WorkerName} = 'Worker: AppointmentTicket';
@@ -74,8 +83,9 @@ performs the selected task.
     my $Result = $TaskHandlerObject->Run(
         TaskID   => 123,
         TaskName => 'some name',    # optional
-        Data     => {               # appointment id as got from Kernel::System::Calendar::Appointment::AppointmentGet()
-            NotifyTime => '2016-08-02 03:59:00',
+        Data     => {
+            AppointmentTicket => $AppointmentTicket, # a hashref specifying the ticket that should be created
+            AppointmentID     => $AppointmentID,     # appointment id as gotten from Kernel::System::Calendar::Appointment::AppointmentGet()
         },
     );
 
@@ -91,20 +101,18 @@ sub Run {
     # check task params
     my $CheckResult = $Self->_CheckTaskParams(
         %Param,
-        NeededDataAttributes =>
-            [
-                'AppointmentTicket', 'AppointmentID'
-            ],
+        NeededDataAttributes => [
+            'AppointmentTicket',
+            'AppointmentID'
+        ],
     );
 
     # stop execution if an error in params is detected
-    return if !$CheckResult;
+    return unless $CheckResult;
 
     my $DBObject                  = $Kernel::OM->Get('Kernel::System::DB');
     my $DynamicFieldBackendObject = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
     my $ConfigObject              = $Kernel::OM->Get('Kernel::Config');
-
-    my $Config = $ConfigObject->Get('Ticket::Frontend::AgentAppointmentEdit');
 
     if ( $Self->{Debug} ) {
         print "    $Self->{WorkerName} executes task: $Param{TaskName}\n";
@@ -134,6 +142,7 @@ sub Run {
     if ( $Param{Data}->{AppointmentTicket}->{DynamicFields} ) {
 
         # Fetch dynamic field configs
+        my $Config = $ConfigObject->Get('Ticket::Frontend::AgentAppointmentEdit');
         if ( defined $Config->{DynamicField} ) {
             my $DynamicFieldConfigsRef = $Kernel::OM->Get('Kernel::System::DynamicField')->DynamicFieldListGet(
                 Valid       => 1,
@@ -164,18 +173,23 @@ sub Run {
 
     # preparing from data
     my $ArticleFrom;
-    my @CustomerUsers = split( ',', $Param{Data}->{AppointmentTicket}->{CustomerUser} );
+    my @CustomerUsers = split /,/, $Param{Data}->{AppointmentTicket}->{CustomerUser};
     for my $CustomerUser (@CustomerUsers) {
         my %CustomerUserData = $Kernel::OM->Get('Kernel::System::CustomerUser')->CustomerUserDataGet(
             User => $CustomerUser,
         );
-        my $CustomerUserString
-            = %CustomerUserData ? "\"$CustomerUserData{UserFirstname} $CustomerUserData{UserLastname}\" <$CustomerUserData{UserEmail}>" : $CustomerUser;
+
+        # Kernel::System::EmailAddress::Format() not available in OTOBO 10.1
+        my $CustomerUserString = %CustomerUserData
+            ?
+            qq{"$CustomerUserData{UserFirstname} $CustomerUserData{UserLastname}" <$CustomerUserData{UserEmail}>}
+            :
+            $CustomerUser;
         if ($ArticleFrom) {
             $ArticleFrom .= ", $CustomerUserString";
         }
         else {
-            $ArticleFrom = "$CustomerUserString";
+            $ArticleFrom = $CustomerUserString;
         }
     }
 
