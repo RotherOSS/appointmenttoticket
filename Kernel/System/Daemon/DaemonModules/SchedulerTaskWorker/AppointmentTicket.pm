@@ -119,14 +119,14 @@ sub Run {
     }
 
     # fetching customer user from selectedcustomeruser
-    my %CustomerUser = $Kernel::OM->Get('Kernel::System::CustomerUser')->CustomerUserDataGet(
+    my %CustomerUserData = $Kernel::OM->Get('Kernel::System::CustomerUser')->CustomerUserDataGet(
         User => $Param{Data}->{AppointmentTicket}->{SelectedCustomerUser},
     );
 
     # create the appointment ticket
     my $TicketID = $Kernel::OM->Get('Kernel::System::Ticket')->TicketCreate(
         $Param{Data}->{AppointmentTicket}->%*,
-        CustomerUser => %CustomerUser ? $CustomerUser{UserLogin} : $Param{Data}->{AppointmentTicket}->{SelectedCustomerUser},
+        CustomerUser => %CustomerUserData ? $CustomerUserData{UserLogin} : $Param{Data}->{AppointmentTicket}->{SelectedCustomerUser},
     );
 
     if ( !$TicketID ) {
