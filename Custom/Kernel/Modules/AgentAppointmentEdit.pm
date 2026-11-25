@@ -78,11 +78,11 @@ sub new {
         },
     ];
 
-    # dependancies of standard fields which are not defined via ACLs
+    # dependencies of standard fields which are not defined via ACLs
     $Self->{InternalDependancy} = {
         ServiceID => {
             SLAID     => 1,
-            ServiceID => 1,    #CustomerUser updates can be submitted as ElementChanged: ServiceID
+            ServiceID => 1,    # CustomerUser updates can be submitted as ElementChanged: ServiceID
         },
         CustomerUser => {
             ServiceID => 1,
@@ -201,12 +201,12 @@ sub Run {
 
     my $ConfigObject      = $Kernel::OM->Get('Kernel::Config');
 # RotherOSS / AppointmentToTicket
-    my $Config = $ConfigObject->Get("Ticket::Frontend::AgentAppointmentEdit");
-    my $CustomerUserObject = $Kernel::OM->Get('Kernel::System::CustomerUser');
+    my $Config                    = $ConfigObject->Get("Ticket::Frontend::AgentAppointmentEdit");
+    my $CustomerUserObject        = $Kernel::OM->Get('Kernel::System::CustomerUser');
     my $DynamicFieldBackendObject = $Kernel::OM->Get('Kernel::System::DynamicField::Backend');
-    my $FieldRestrictionsObject = $Kernel::OM->Get('Kernel::System::Ticket::FieldRestrictions');
-    my $TicketObject = $Kernel::OM->Get('Kernel::System::Ticket');
-    my $UploadCacheObject = $Kernel::OM->Get('Kernel::System::Web::UploadCache');
+    my $FieldRestrictionsObject   = $Kernel::OM->Get('Kernel::System::Ticket::FieldRestrictions');
+    my $TicketObject              = $Kernel::OM->Get('Kernel::System::Ticket');
+    my $UploadCacheObject         = $Kernel::OM->Get('Kernel::System::Web::UploadCache');
 # EO AppointmentToTicket
     my $LayoutObject      = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
     my $CalendarObject    = $Kernel::OM->Get('Kernel::System::Calendar');
@@ -1563,7 +1563,7 @@ sub Run {
             $TreeView = 1;
         }
 
-        # if future task exists, transform existing data into neede structure
+        # if future task exists, transform existing data into needed structure
         if (%FutureTask) {
             my @CustomerUserStrings = split(',', $FutureTask{Data}->{AppointmentTicket}->{CustomerUser});
             if ( @CustomerUserStrings ) {
