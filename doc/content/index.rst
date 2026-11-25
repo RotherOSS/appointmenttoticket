@@ -11,11 +11,15 @@ Sacrifice to Sphinx
 
 Description
 ===========
-This package brings the functionality to automatically create a ticket with configurable parameters to a freely chooseable point in time in relation to an appointment.
+This package brings the functionality to automatically create a ticket in relation to an appointment.
+The parameters of the generated ticket are configurable. The time in relation to the appointment start or end time are freely chooseable.
 
 Ticket Creation is initiated in the AppointmentEdit mask under the section 'Ticket Creation'. A point in time relative to the appointment, as well as ticket data can be configured. Recurring appointments are supported.
 
 The feature as of now does not support dynamic fields of type database.
+
+The customer user of the generated ticket is choosable. When Ticket::Frontend::AgentAppointmentEdit::CustomerIDReadOnly is deactivated
+then the customer is choosable as well.
 
 .. figure:: screenshot_en.png
    :scale: 50%
@@ -70,6 +74,10 @@ Sets if SLA must be selected by the agent.
 Ticket::Frontend::AgentAppointmentEdit###Priority
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Sets the default priority for new tickets in the AgentAppointmentEdit interface.
+
+Ticket::Frontend::AgentAppointmentEdit::CustomerIDReadOnly
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Disables the selection of the customer when activated.
 
 Frontend::Agent::View::TicketCalendar
 ------------------------------------------------------------------------------------------------------------------------------

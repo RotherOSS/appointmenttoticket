@@ -1458,6 +1458,9 @@ Core.Agent.AppointmentCalendar = (function (TargetNS) {
                 return false;
             });
 
+            // Register the event for customer id selection dialog.
+            Core.Agent.TicketAction.Init();
+
             // initialize customer user search field
             Core.Agent.CustomerSearchAutoComplete.Init();
             // initialize modern fields on custom selection
